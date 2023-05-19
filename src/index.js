@@ -15,10 +15,10 @@ const App = () => {
     <div className="App">
       <div className="crop-container">
         <Cropper
-          image="https://webinar.us-southeast-1.linodeobjects.com/IMG_7543.PNG"
+          image="https://picsum.photos/1200/800"
           crop={crop}
           zoom={zoom}
-          aspect={4 / 3}
+          aspect={1 / 1}
           onCropChange={setCrop}
           onCropComplete={onCropComplete}
           onZoomChange={setZoom}
