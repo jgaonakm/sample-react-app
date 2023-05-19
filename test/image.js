@@ -1,15 +1,14 @@
 const puppeteer = require('puppeteer');
 
-const url = process.argv[2];
-const name = process.argv[3];
+const name = process.argv[2];
 
-if (!url) {
-    throw "Missing url";
-}
+
 
 if (!name) {
     throw "Missing image name";
 }
+
+url = 'https://' + name + '.website-us-southeast-1.linodeobjects.com';
 
 async function run () {
     const browser = await puppeteer.launch();
